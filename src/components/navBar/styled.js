@@ -6,7 +6,7 @@ export const NavStyled = styled.nav`
     /* display: block; */
     /* padding: 0.7rem 1.7rem; */
     padding: 12px;
-    /* z-index: 2; */
+    z-index: 3;
     position: fixed;
     left: 50%;
     bottom: 2rem;
