@@ -2,13 +2,18 @@ import { PortfolioSection, PortfoliosDiv, ProjectContainer, Description } from "
 
 import projects from "./projects"
 
+import Modal from "./Modal/Modal"
+import { useProject } from "../../providers/projects/projects"
+
 const Portfolio = () => {
+
+    const {show} = useProject()
 
     return (
         <PortfolioSection id="portfolio">
             <h5>Conheça meus</h5>
             <h2>Projetos</h2>
-
+            <Modal/>
             <PortfoliosDiv>
                 {projects.map((project, index) => {
                     return (
@@ -23,9 +28,8 @@ const Portfolio = () => {
                                     <span>{project.language}</span>
                                 </div>
 
-                                <button>Informações</button>
-                                {/* <a href={project.github} target="_blank">github</a>
-                                <a href={project.live} target="_blank">demo</a> */}
+                                <button onClick={() => show(project)}>Informações</button>
+                                
                             </Description>
 
                         </ProjectContainer>
