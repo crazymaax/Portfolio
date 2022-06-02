@@ -100,6 +100,11 @@ export const FormStyled = styled.form`
         background-color: var(--color-primary);
         color: var(--bg-color);
         cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+            background-color: var(--color-secondary);
+            border-color: transparent;
+        }
     }
     
     @media screen and (min-width: 768px) {
