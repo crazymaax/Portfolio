@@ -4,14 +4,6 @@ export const HeaderStyled = styled.header`
     height: 110vh;
     padding-top: 40px;
     overflow: hidden;
-
-/*     @media screen and (max-width: 1024px) {
-        height: 68vh;
-    } */
-
-/*     @media screen and (min-width: 768px) {
-        height: 100vh;
-    } */
 `
 
 export const HeaderContainer = styled.div`
@@ -22,7 +14,7 @@ export const HeaderContainer = styled.div`
     position: relative;
 
     h1{
-        color: var(--color-secondary);
+        color: ${(props) => props.theme.quinternary};
         font-weight: 600;
 	    font-size: 2.5rem;
     }
@@ -40,18 +32,22 @@ export const Buttons = styled.div`
         display: inline-block;
         padding: 0.75rem 1.2rem;
         border-radius: 0.4rem;
-        border: 1px solid var(--color-primary);
+        color: ${(props) => props.theme.terciary};
+        border: 1px solid ${(props) => props.theme.secondary};
 
         &:hover {
-            background-color: var(--color-secondary);
+            background-color: ${(props) => props.theme.quinternary};
             border-color: transparent;
-            color: var(--bg-color)
+            color: white;
         }
     }
 
     a:last-child {
-        background-color: var(--color-primary);
-        color: var(--bg-color);
+        background-color: ${(props) => props.theme.secondary};
+        color: white;
+        &:hover {
+            background-color: ${(props) => props.theme.quinternary};
+        }
     }
 
 `
@@ -71,13 +67,13 @@ export const Socials = styled.div`
             content: "";
             width: 1px;
             height: 2rem;
-            background-color: var(--color-primary);
+            background-color: ${(props) => props.theme.quinternary};
         }
     }
 `
 
 export const Image = styled.figure`
-    background-color: linear-gradient(var(--color-primary));
+    /* background-color: linear-gradient(var(--color-primary)); */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);

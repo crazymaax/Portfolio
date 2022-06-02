@@ -1,29 +1,10 @@
 import styled from "styled-components"
 
-export const PortfolioSection = styled.section`
-    width: 75%;
-    margin: 8rem auto;
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    
-    h5, h2 {
-        text-align: center;
-    }
-    
-    h2 {
-        margin-bottom: 30px;
-        color: var(--color-primary);
-        font-weight: 700;
-        font-size: 1.6rem;
-    }
-`
-
 export const PortfoliosDiv = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: var(--color-primary-2);
+    background-color: ${(props) => props.theme.secondary};
     border-radius: 8px;
     
 `
@@ -33,7 +14,6 @@ export const ProjectContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* background-color: var(--color-primary-2); */
     margin: 0.3rem;
     position: relative;
     transition: all 0.3s ease-in-out;
@@ -85,6 +65,7 @@ export const Description = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    color: white;
 
     z-index: 1;
     transition: opacity 0.5s;
@@ -95,7 +76,6 @@ export const Description = styled.div`
 
     div {
         margin-top: 10px;
-        color: var(--bg-color);
         h3 {
             font-weight: 700;
         }
@@ -104,14 +84,16 @@ export const Description = styled.div`
     button {
         margin-bottom: 10px;
         background-color: transparent;
-        border: 1px solid var(--bg-color);
+        border: 1px solid white;
+        color: white;
         border-radius: 3px;
-        padding: 5px;
+        padding: 6px;
         cursor: pointer;
         transition: all 0.5s;
         &:hover {
-            border-color: var(--color-primary);
-            color: var(--color-primary);
+            padding: 7px;
+            background-color: #1A93CD;
+            color: #1F1F38;
         }
     } 
 
@@ -125,8 +107,8 @@ export const Description = styled.div`
             }
 
             span {
-                font-size: 16px;
-                color: var(--color-primary);
+                font-size: 14px;
+                color: #62FFFF;
             }
         }
 

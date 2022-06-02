@@ -7,7 +7,7 @@ const Experience = () => {
     const [hover, setHover] = useState(false)
 
     return (
-        <ExperienceSection id="experience">
+        <section id="experience">
             <h5>Saiba sobre minha</h5>
             <h2>Experiência</h2>
 
@@ -21,7 +21,7 @@ const Experience = () => {
                 )
             })}  
             </SkillsDiv>
-        </ExperienceSection>
+        </section>
     )
 }
 

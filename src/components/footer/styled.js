@@ -13,8 +13,8 @@ export const FooterStyled = styled.footer`
   }
 }
 
-background-color: var(--color-primary);
-color: var(--bg-color);
+background-color: ${(props) => props.theme.secondary};
+color: ${(props) => props.theme.terciary};
 display: flex;
 align-items: center;
 flex-direction: column;
@@ -36,9 +36,9 @@ z-index: 4;
 
 a {
     font-size: 2.3rem;
-    color: var(--bg-color);
+    color: ${(props) => props.theme.terciary};
     &:hover {
-        color: var(--color-secondary);
+        color: ${(props) => props.theme.primary};
     }
 }
 
@@ -49,7 +49,8 @@ ul {
     
     li {
         margin: 0 8px;
-        background-color: var(--color-terciary);
+        background-color: ${(props) => props.theme.quinternary};
+        border-radius: 3px;
         transition: box-shadow 0.3s;
         &:hover {
             box-shadow: 0px 11px 25px 4px rgba(0,0,0,0.3);
@@ -63,10 +64,9 @@ ul {
             align-items: center;
             font-size: 2rem;
             padding: 5px;
-            transition: padding 0.3s, color 0.3s, transform 0.3s;
+            transition: all 0.3s;
             &:hover {
                 animation: slide-in-top 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-                color: var(--bg-color);
                 padding: 8px;
                 
             }
@@ -75,6 +75,6 @@ ul {
 }
 
 span {
-    color: var(--color-terciary);
+    color: ${(props) => props.theme.primary};
 }
 `

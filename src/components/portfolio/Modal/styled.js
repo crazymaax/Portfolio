@@ -1,7 +1,8 @@
 import styled from "styled-components"
 
 export const ModalDiv = styled.div`
-    color: black;
+    color: #424242;
+    border-radius: 3px;
     height: 550px;
     display: flex;
     flex-direction: column;
@@ -36,10 +37,11 @@ export const ModalDiv = styled.div`
 
 export const ProjectInfo = styled.div`
 margin-top: 10px;
-border-top: 2px solid var(--color-primary-2);
+border-top: 2px solid ${(props) => props.theme.quinternary};
 
 h5 {
     font-size: 1.6rem;
+    font-weight: 600;
     margin: 10px;
 }
 
@@ -52,23 +54,18 @@ h5 {
         display: inline-block;
         padding: 0.2rem 1rem;
         border-radius: 0.4rem;
-        border: 1px solid var(--color-primary);
-        background-color: var(--color-primary);
-        color: var(--bg-color);
+        border: 1px solid ${(props) => props.theme.secondary};
+        background-color: ${(props) => props.theme.secondary};
+        color: white;
 
         &:hover {
-            background-color: var(--bg-color);
+            background-color: ${(props) => props.theme.quinternary};
             border-color: transparent;
-            color: var(--color-secondary);
+            color: white;
         }
     }
     
     a:last-child {
-        /* color: var(--color-secondary); */
-        color: var(--bg-color);
         margin-left: 15px;
-        &:hover {
-            color: var(--color-secondary);
-        }
     }
 `

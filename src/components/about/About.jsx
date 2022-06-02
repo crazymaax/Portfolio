@@ -9,7 +9,7 @@ import { VscFolderLibrary } from "react-icons/vsc"
 const About = () => {
 
     return (
-        <AboutSection id="about">
+        <section id="about">
             <h5>Conheça</h5>
             <h2>Sobre mim</h2>
 
@@ -64,7 +64,7 @@ const About = () => {
                     <a href="#contact">Vamos conversar</a>
                 </div>
             </AboutContainer>
-        </AboutSection>
+        </section>
     )
 }
 

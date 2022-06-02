@@ -1,25 +1,5 @@
 import styled from "styled-components"
 
-export const AboutSection = styled.section`
-    width: 75%;
-    margin: 8rem auto;
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-
-    h5, h2 {
-        text-align: center;
-    }
-
-    h2 {
-        margin-bottom: 30px;
-        color: var(--color-primary);
-        font-weight: 700;
-        font-size: 1.6rem;
-    }
-
-`
-
 export const AboutContainer = styled.div`
     /* display: grid;
     grid-template-columns: 35% 50%;
@@ -33,9 +13,11 @@ export const AboutContainer = styled.div`
         display: inline-block;
         padding: 0.75rem 1.2rem;
         border-radius: 0.4rem;
-        border: 1px solid var(--color-primary);
-        background-color: var(--color-primary);
-        color: var(--bg-color);
+        background-color: ${(props) => props.theme.secondary};
+        color: white;
+        &:hover {
+            background-color: ${(props) => props.theme.quinternary};
+        }
     }
 `
 
@@ -47,7 +29,7 @@ export const HighlightInfos = styled.div`
     margin-bottom: 25px;
     
     h4 {
-        color: var(--color-primary);
+        color: ${(props) => props.theme.quaternary};
         margin-top: 20px;
         font-size: 1.3rem;
         font-weight: 500;
@@ -66,7 +48,7 @@ export const ImageContainer = styled.div`
     /* margin-right: 50px; */
     /* aspect-ratio: 1/1; */
     border-radius: 3rem;
-    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+    background: linear-gradient(45deg, transparent, ${(props) => props.theme.quinternary}, transparent);
     /* display: grid; */
     /* place-items: center; */
     margin-bottom: 20px;
@@ -106,7 +88,7 @@ export const CardsContainer = styled.div`
 `
 
 export const Cards = styled.div`
-    background-color: var(--bg-color-2);
+    background-color: ${(props) => props.theme.secondary};
     border: 1px solid transparent;
     border-radius: 1rem;
     padding: 1.7rem;
@@ -116,11 +98,10 @@ export const Cards = styled.div`
     transition: all 400ms ease;
     &:hover {
         background-color: transparent;
-        border-color: var(--color-primary-2);
+        border-color: ${(props) => props.theme.secondary};
     }
 
     .icon {
-        color: var(--color-primary);
         font-size: 1.4rem;
         margin-bottom: 1rem;
     }
@@ -131,7 +112,7 @@ export const Cards = styled.div`
 
     small {
         font-size: 0.7rem;
-        color: var(--color-secondary);
+        color: ${(props) => props.theme.quaternary};
     }
 `
 
@@ -140,7 +121,7 @@ export const TextContainer = styled.div`
     p {
         /* margin: 2rem 0 2.6rem; */
         margin: 5px;
-        color: var(--color-secondary);
+        /* color: var(--color-secondary); */
     }
     
     p:last-child {

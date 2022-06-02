@@ -22,16 +22,30 @@ export const NavStyled = styled.nav`
         padding: 0.9rem;
         border-radius: 50%;
         display: flex;
-        color: var(--color-terciary);
+        color: ${(props) => props.theme.terciary};
         font-size: 1.1rem;
         &:hover {
             background-color: rgba(0, 0, 0, 0.3);
-            color: var(--color-primary);
+            color: ${(props) => props.theme.quinternary};
         }
     }
     
     a.active {
-        background-color: var(--bg-color);
-        color: var(--color-primary);
+        background-color: ${(props) => props.theme.secondary};
+        color: ${(props) => props.theme.quaternary};
     }
+`
+
+export const ChangeMode = styled.button`
+    position: fixed;
+    top: 15px;
+    left: 90%;
+    z-index: 3;
+    padding: 5px;
+    line-height: 5px;
+    font-size: 1.2rem;
+    color: ${(props) => props.theme.primary};
+    border-radius: 3px;
+    border: transparent;
+    background-color: ${(props) => props.theme.terciary};
 `

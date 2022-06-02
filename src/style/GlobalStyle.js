@@ -9,13 +9,19 @@ export const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 :root {
-	--bg-color: #1f1f38;
+/* 	--bg-color: #1F1F38;
+	--bg-color-2: #266DD3;
+	--color-primary: #FFFFFF;
+	--color-primary-2: #7B7263;
+	--color-secondary: #798478; */
+	/* --color-terciary: rgba(255, 255, 255, 0.6); */
+	
+	/* --bg-color: #1f1f38;
 	--bg-color-2: #2c2c6c;
 	--color-primary: #4db5ff;
 	--color-primary-2: rgba(77, 181, 255, 0.4);
 	--color-secondary: #fff;
-	--color-terciary: rgba(255, 255, 255, 0.6);
-
+	--color-terciary: rgba(255, 255, 255, 0.6); */
 	/* LG 75% MD 86% SM 90% */
 	/* .CONTAINER{
 		WIDTH VAR(LG,MD,SM);
@@ -61,22 +67,38 @@ html {
 body {
 	line-height: 1.7;
 	font-family: 'Poppins', sans-serif;
-	background-color: var(--bg-color);
-	color: var(--color-terciary);
+	background-color: ${(props) => props.theme.primary};
+	color: ${(props) => props.theme.terciary};
+	transition: all 0.3s;
 }
 
 section {
 	margin-top: 8rem;
+	width: 75%;
+    margin: 8rem auto;
 	padding-top: 20px;
-	/* height: 100vh; */
+	display: flex;
+    flex-direction: column;
+    text-align: justify;
+
+	h5, h2 {
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+        color: ${(props) => props.theme.quinternary};
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
 }
 
 a {
-	color: var(--color-primary);
+	color: ${(props) => props.theme.quinternary};
 	transition: all 400ms ease;
 	text-decoration: none;
 	&:hover {
-		color: var(--color-secondary);
+		color: ${(props) => props.theme.terciary};
 	}
 }
 

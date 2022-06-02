@@ -1,25 +1,5 @@
 import styled from "styled-components"
 
-export const ContactSection = styled.section`
-    width: 75%;
-    margin: 8rem auto;
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-
-    h5, h2 {
-        text-align: center;
-    }
-    
-    h2 {
-        margin-bottom: 30px;
-        color: var(--color-primary);
-        font-weight: 700;
-        font-size: 1.6rem;
-    }
-
-`
-
 export const ContactContainer = styled.div`
     display: flex;
     /* justify-content: space-between; */
@@ -47,7 +27,7 @@ export const ContactsBox = styled.div`
     `
 
 export const ContactOption = styled.div`
-    background-color: var(--bg-color-2);
+    background-color: ${(props) => props.theme.secondary};
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
@@ -55,7 +35,7 @@ export const ContactOption = styled.div`
     transition: all 400ms ease;
     &:hover {
         background-color: transparent;
-        border-color: var(--color-primary-2);
+        border-color: ${(props) => props.theme.secondary};
     }
 
     span {
@@ -64,13 +44,18 @@ export const ContactOption = styled.div`
     }
 
     h5 {
-        color: var(--color-secondary);
+        color: ${(props) => props.theme.quaternary};
     }
     
     a {
         margin-top: 0.7rem;
         display: inline-block;
         font-size: 0.9rem;
+        color: ${(props) => props.theme.terciary};
+        &:hover {
+            color: ${(props) => props.theme.quinternary};
+
+        }
     }
     `
 
@@ -85,9 +70,12 @@ export const FormStyled = styled.form`
         padding: 1.5rem;
         border-radius: 0.5rem;
         background: transparent;
-        border: 2px solid var(--color-primary-2);
+        border: 2px solid ${(props) => props.theme.secondary};
         resize: none;
-        color: var(--color-secondary);
+        color: ${(props) => props.theme.terciary};
+        &::placeholder {
+            color: ${(props) => props.theme.terciary};
+        }
     }
     
     button {
@@ -96,13 +84,13 @@ export const FormStyled = styled.form`
         padding: 0.75rem 1.2rem;
         margin: 0 auto;
         border-radius: 0.4rem;
-        border: 1px solid var(--color-primary);
-        background-color: var(--color-primary);
-        color: var(--bg-color);
+        border: 1px solid ${(props) => props.theme.secondary};
+        background-color: ${(props) => props.theme.secondary};
         cursor: pointer;
         transition: all 0.3s;
+        color: white;
         &:hover {
-            background-color: var(--color-secondary);
+            background-color: ${(props) => props.theme.quinternary};
             border-color: transparent;
         }
     }

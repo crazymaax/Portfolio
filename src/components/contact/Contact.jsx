@@ -24,7 +24,7 @@ const Contact = () => {
   };
 
     return (
-        <ContactSection id="contact">
+        <section id="contact">
             <h5>Entre em</h5>
             <h2>Contato</h2>
 
@@ -57,7 +57,7 @@ const Contact = () => {
                     <button type="submit">Enviar</button>
                 </FormStyled>
             </ContactContainer>
-        </ContactSection>
+        </section>
     )
 }
 

@@ -10,7 +10,7 @@ const Portfolio = () => {
     const {show} = useProject()
 
     return (
-        <PortfolioSection id="portfolio">
+        <section id="portfolio">
             <h5>Conheça meus</h5>
             <h2>Projetos</h2>
             <Modal/>
@@ -37,7 +37,7 @@ const Portfolio = () => {
                     )
                 })}
             </PortfoliosDiv>
-        </PortfolioSection>
+        </section>
     )
 }
 
