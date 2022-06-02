@@ -3,7 +3,25 @@ import { ContactContainer, ContactOption, ContactsBox, ContactSection, FormStyle
 import { MdOutlineEmail } from "react-icons/md"
 import { BsWhatsapp } from "react-icons/bs"
 
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 const Contact = () => {
+
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm("service_iyezwbx", "template_bh3m111", form.current, "0UVudnl16MP0X2jib")
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      e.target.reset();
+  };
 
     return (
         <ContactSection id="contact">
@@ -32,7 +50,7 @@ const Contact = () => {
 
                 </ContactsBox>
 
-                <FormStyled action="">
+                <FormStyled ref={form} onSubmit={sendEmail}>
                     <input type="text" name="name" placeholder="Seu nome" />
                     <input type="email" name="email" placeholder="Seu email" />
                     <textarea name="message" rows="7" placeholder="Sua mensagem"></textarea>

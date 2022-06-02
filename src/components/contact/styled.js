@@ -99,6 +99,7 @@ export const FormStyled = styled.form`
         border: 1px solid var(--color-primary);
         background-color: var(--color-primary);
         color: var(--bg-color);
+        cursor: pointer;
     }
     
     @media screen and (min-width: 768px) {
