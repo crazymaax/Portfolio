@@ -36,7 +36,7 @@ const Contact = () => {
                             <h4>Email</h4>
                         </div>
                         <h5>maxmilan10@hotmail.com</h5>
-                        <a href="mailto:maxmilan10@hotmail.com" target="_blank">Envie uma mensagem</a>
+                        <a href="mailto:maxmilan10@hotmail.com" target="_blank">Envie um email</a>
                     </ContactOption>
 
                     <ContactOption>
@@ -54,7 +54,7 @@ const Contact = () => {
                     <input type="text" name="name" placeholder="Seu nome" />
                     <input type="email" name="email" placeholder="Seu email" />
                     <textarea name="message" rows="7" placeholder="Sua mensagem"></textarea>
-                    <button type="submit">Envie a mensagem</button>
+                    <button type="submit">Enviar</button>
                 </FormStyled>
             </ContactContainer>
         </ContactSection>
