@@ -1,7 +1,7 @@
 import {HeaderStyled, HeaderContainer, Buttons, Socials, Image, ScrollDown} from "./styled.js"
 
 import resume from "../../assets/Currículo de Max Milan Campos de Oliveira.pdf"
-import photo from "../../assets/images/photo/Max.png"
+import photo from "../../assets/images/photo/Max.jpg"
 
 import {BsLinkedin} from "react-icons/bs"
 import {FaGithub} from "react-icons/fa"

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const HeaderStyled = styled.header`
-    height: 98vh;
+    height: 110vh;
     padding-top: 40px;
     overflow: hidden;
 
@@ -66,7 +66,7 @@ export const Socials = styled.div`
         gap: 0.8rem;
         position: absolute;
         left: 0;
-        bottom: 3rem;
+        bottom: 7rem;
         &::after {
             content: "";
             width: 1px;
@@ -90,6 +90,11 @@ export const Image = styled.figure`
     img {
         width: 100%;
         min-width: 200px;
+        border-radius: 20px 20px 0 0;
+        transition: box-shadow 0.5s;
+        &:hover {
+            box-shadow: 0px 20px 20px 4px rgb(255 255 255 / 20%);
+        }
         /* border-radius: 12rem 12rem 0 0; */
         /* object-fit: cover; */
     }
