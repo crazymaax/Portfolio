@@ -48,4 +48,5 @@ export const ChangeMode = styled.button`
     border-radius: 3px;
     border: transparent;
     background-color: ${(props) => props.theme.terciary};
+    cursor: pointer;
 `
