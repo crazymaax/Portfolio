@@ -72,15 +72,16 @@ export const ImageContainer = styled.div`
     margin-bottom: 20px;
     
     figure {
-        border-radius: 3rem;
-        overflow: hidden;
+        display: flex;
+        align-items: center;
         transform: rotate(10deg);
         transition: all 400ms ease;
         &:hover {
             transform: rotate(0);
         }
-
+        
         img {
+            border-radius: 3rem;
             /* width: 100%; */
             height: 188px;
         }
