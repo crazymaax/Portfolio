@@ -1,8 +1,8 @@
 import { NavStyled } from "./styled"
 
-import { AiOutlineHome, AiOutlineUser } from "react-icons/ai"
-import { BiBook, BiMessageSquareDetail } from "react-icons/bi"
-import { RiServiceLine } from "react-icons/ri"
+import { AiOutlineHome, AiOutlineUser, AiOutlineMessage } from "react-icons/ai"
+import { BiStar } from "react-icons/bi"
+import { MdWorkOutline } from "react-icons/md"
 import { useState } from "react"
 
 
@@ -25,17 +25,17 @@ const NavBar = () => {
             <a href="#experience"
             onClick={() => setActive("#experience")}
             className={active === "#experience" ? "active" : ""}>
-                <BiBook/>
+                <BiStar/>
                 </a>
             <a href="#portfolio"
             onClick={() => setActive("#portfolio")}
             className={active === "#portfolio" ? "active" : ""}>
-                <RiServiceLine/>
+                <MdWorkOutline/>
             </a>
             <a href="#contact"
             onClick={() => setActive("#contact")}
             className={active === "#contact" ? "active" : ""}>
-                <BiMessageSquareDetail/>
+                <AiOutlineMessage/>
             </a>
         </NavStyled>
     )
