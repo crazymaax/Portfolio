@@ -29,11 +29,11 @@ const About = () => {
                                 <h5>Experiência</h5>
                                 <small>1+ Anos</small>
                             </Cards>
-                            {<Cards>
+{/*                             {<Cards>
                                 <FiUsers className="icon" />
                                 <h5>Clientes</h5>
                                 <small>100+ </small>
-                            </Cards>}
+                            </Cards>} */}
                             <Cards>
                                 <VscFolderLibrary className="icon" />
                                 <h5>Projetos</h5>
