@@ -33,7 +33,7 @@ const Header = () => {
                     <figcaption>Max Milan</figcaption>
                 </Image>
 
-                <ScrollDown href="#contact">Arraste até o fim</ScrollDown>
+                {/* <ScrollDown href="#contact">Arraste até o fim</ScrollDown> */}
             
             </HeaderContainer>
         </HeaderStyled>
