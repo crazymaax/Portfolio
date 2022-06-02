@@ -51,6 +51,7 @@ export const HighlightInfos = styled.div`
         margin-top: 20px;
         font-size: 1.3rem;
         font-weight: 500;
+        padding: 1rem;
     }
     
     @media screen and (min-width: 768px) {
@@ -80,7 +81,7 @@ export const ImageContainer = styled.div`
         }
 
         img {
-            width: 100%;
+            /* width: 100%; */
             height: 188px;
         }
 
@@ -108,7 +109,8 @@ export const Cards = styled.div`
     border: 1px solid transparent;
     border-radius: 1rem;
     padding: 1.7rem;
-    height: 100px;
+    /* height: 100px; */
+    width: 100px;
     text-align: center;
     transition: all 400ms ease;
     &:hover {
