@@ -15,7 +15,7 @@ const projects = [
         name: "Smart Menu",
         github: "https://github.com/crazymaax/SmartMenu",
         image: SmartMenu,
-        language: "React",
+        language: "React - Router Dom - Hook Form - Axios - Styled-Components - React Icons - Toastify - JSON Server - HTML - JavaScript",
         description: "Projeto como conclusão do terceiro módulo do curso de Front-End da Kenzie Academy. Onde o projeto de cardápio digital propõe reduzir a existência dos cardápios físicos! Infelizmente a complexidade do projeto e o tempo máximo de 2 sprints, fez com que o mesmo não fosse terminado a tempo.",
         live: "https://cardapio-digital-capstone.vercel.app/"
     },
@@ -23,7 +23,7 @@ const projects = [
         name: "Do.it",
         github: "https://github.com/crazymaax/Do.it",
         image: Doit,
-        language: "React",
+        language: "React - Router Dom - Hook Form - Axios - Styled-Components - React Icons - Toastify - HTML - JavaScript",
         description: "Aplicação simples onde é possível registrar tarefas e concluí-las.",
         live: "https://do-it-kappa.vercel.app/"
     },
@@ -31,7 +31,7 @@ const projects = [
         name: "GitHub Cards",
         github: "https://github.com/crazymaax/GitHub-Cards",
         image: GitHubCards,
-        language: "React",
+        language: "React - Axios - GitHub API - Material UI - Hook Form - Styled-Components - HTML - JavaScript",
         description: "Uma simples aplicação onde utiliza a API do GitHub para localizar repositórios.",
         live: "https://github-card-mu-ten.vercel.app/"
     },
@@ -39,7 +39,7 @@ const projects = [
         name: "Hamburgueria da Kenzie",
         github: "https://github.com/crazymaax/Hamburgueria-da-Kenzie",
         image: HamburgueriaKenzie,
-        language: "React",
+        language: "React - HTML - CSS - JavaScript",
         description: "E-commerce de Hamburguers da Kenzie, feito em React.",
         live: "https://hamburgueria-da-kenzie-crazymaax.vercel.app/"
     },
@@ -47,7 +47,7 @@ const projects = [
         name: "Nu Kenzie",
         github: "https://github.com/crazymaax/Nu-Kenzie",
         image: NuKenzie,
-        language: "React",
+        language: "React - HTML - CSS - JavaScript",
         description: "Projeto com ideia de guardar despesas e entradas de forma simples e rápida! Feito em React.js.",
         live: "https://nu-kenzie-tau.vercel.app/"
     },
@@ -55,7 +55,7 @@ const projects = [
         name: "KenzieFood",
         github: "https://github.com/crazymaax/KenzieFood",
         image: KenzieFood,
-        language: "JavaScript",
+        language: "Kenzie Academy API - JavaScript - HTML - CSS",
         description: "Projeto como conclusão do segundo módulo do curso de Front-End da Kenzie Academy.",
         live: "https://crazymaax.github.io/KenzieFood/"
     },
@@ -63,15 +63,15 @@ const projects = [
         name: "Fotos Próximas",
         github: "https://github.com/crazymaax/Fotos-Proximas",
         image: FotosProximas,
-        language: "JavaScript",
-        description: "Site que utiliza a API do Flicker para obter imagens com localização próxima do usuário.",
+        language: "Flickr API - JavaScript - HTML - CSS",
+        description: "Site que utiliza a API do Flickr para obter imagens com localização próxima do usuário.",
         live: "https://crazymaax.github.io/Fotos-Proximas/"
     },
     {
         name: "Blog Simples",
         github: "https://github.com/crazymaax/Simples-Blog",
         image: BlogSimples,
-        language: "JavaScript",
+        language: "Kenzie Academy API - JavaScript - HTML - CSS",
         description: "Um blog simples que utiliza uma API de testes criada por Kenzie Academy.",
         live: "https://crazymaax.github.io/Simples-Blog/"
     },
@@ -79,7 +79,7 @@ const projects = [
         name: "Bruno Adivinha",
         github: "https://github.com/crazymaax/Bruno-Adivinha",
         image: BrunoAdivinha,
-        language: "JavaScript",
+        language: "JavaScript - HTML - CSS",
         description: "Magic 8-Ball versão Encanto Disney, inspirado no brinquedo disponibilizado pelo McDonald's.",
         live: "https://crazymaax.github.io/Bruno-Adivinha/"
     },
@@ -87,7 +87,7 @@ const projects = [
         name: "Cara ou Coroa",
         github: "https://github.com/crazymaax/Cara-ou-Coroa",
         image: CaraOuCoroa,
-        language: "JavaScript",
+        language: "JavaScript - HTML - CSS",
         description: "Jogo simples de Cara ou Coroa inspirado no jogo Ragnarok Online feito com JavaScript.",
         live: "https://crazymaax.github.io/Cara-ou-Coroa/"
     },
@@ -95,7 +95,7 @@ const projects = [
         name: "Torre de Hanoi",
         github: "https://github.com/crazymaax/Torre-de-Hanoi/",
         image: TorreHanoi,
-        language: "JavaScript",
+        language: "JavaScript - HTML - CSS",
         description: "Jogo simples da Torre de Hanoi feito com JavaScript.",
         live: "https://crazymaax.github.io/Torre-de-Hanoi-Fork/"
     },
