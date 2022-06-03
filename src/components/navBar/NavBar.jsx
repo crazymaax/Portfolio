@@ -1,6 +1,6 @@
 import { ChangeMode, NavStyled } from "./styled"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 import { AiOutlineHome, AiOutlineUser, AiOutlineMessage } from "react-icons/ai"
 import { BiStar } from "react-icons/bi"
@@ -14,6 +14,24 @@ const NavBar = () => {
 
     const { setCurrentTheme, getOpositeTheme } = useUI();
     const [active, setActive] = useState("#")
+
+    const HandleNav = () => {
+        if (window.pageYOffset < 739) {
+            setActive("#")
+        } else if (window.pageYOffset < 1590) {
+            setActive("#about")
+        } else if (window.pageYOffset < 2351) {
+            setActive("#experience")
+        } else if (window.pageYOffset < 5547) {
+            setActive("#portfolio")
+        } else {
+            setActive("#contact")
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll", HandleNav);
+    }, []);
 
     return (
         <>
