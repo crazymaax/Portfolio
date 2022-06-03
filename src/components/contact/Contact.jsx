@@ -6,21 +6,24 @@ import { MdOutlineEmail } from "react-icons/md"
 import { BsWhatsapp } from "react-icons/bs"
 
 import emailjs from '@emailjs/browser';
+import { toast } from "react-toastify";
 
 const Contact = () => {
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
-
+        const toasty = toast.loading("Encaminhando email...")
         emailjs.sendForm("service_iyezwbx", "template_bh3m111", form.current, "0UVudnl16MP0X2jib")
             .then((result) => {
+                toast.update(toasty, {render: "Mensagem encaminhada", type: "success", isLoading: false, autoClose: 2500});
+                e.target.reset();
                 console.log(result.text);
             }, (error) => {
+                toast.update(toasty, {render: "Algo deu errado, utilize outro meio de comunicação", type: "error", isLoading: false, autoClose: 2500 })
                 console.log(error.text);
             });
 
-        e.target.reset();
     };
 
     return (
