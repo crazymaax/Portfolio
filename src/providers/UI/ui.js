@@ -4,7 +4,7 @@ const UIContext = createContext();
 
 export const UIProvider = ({ children }) => {
 
-    const [currentTheme, setCurrentTheme] = useState("light");
+    const [currentTheme, setCurrentTheme] = useState("dark");
 
     const getOpositeTheme = useCallback(() => (currentTheme === "light" ? "dark" : "light"),
         [currentTheme]
