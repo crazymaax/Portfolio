@@ -6,7 +6,8 @@ export const PortfoliosDiv = styled.div`
     justify-content: center;
     background-color: ${(props) => props.theme.secondary};
     border-radius: 8px;
-`
+    padding: 15px 0;
+    `
 
 export const ProjectContainer = styled.div`
     display:flex;
@@ -16,9 +17,11 @@ export const ProjectContainer = styled.div`
     margin: 0.3rem;
     position: relative;
     transition: all 0.3s ease-in-out;
+    height: 160px;
+    width: 95%;
     
     figure {
-        width: 225px;
+        width: 100%;
         height: 100%;
         transition: opacity 0.5s;
         position: relative;
@@ -38,12 +41,15 @@ export const ProjectContainer = styled.div`
         min-width: 100%;
         min-height: 100%
     }
-
+    
     figcaption {
         display: none;
     }
-
+    
     @media screen and (min-width: 768px) {
+        width: inherit;
+        height: 255px;
+        
         figure {
             width: 450px;
         }
@@ -79,8 +85,13 @@ export const Description = styled.div`
         h3 {
             font-weight: 700;
         }
-    }
 
+        span {
+            font-size: 10px;
+            color: #62FFFF;
+        }
+    }
+    
     button {
         margin-bottom: 10px;
         background-color: transparent;
@@ -100,14 +111,13 @@ export const Description = styled.div`
     @media screen and (min-width: 768px) {
         div {
             margin-top: 50px;
-
+            
             h3 {
                 font-size: 22px;
             }
-
+            
             span {
                 font-size: 14px;
-                color: #62FFFF;
             }
         }
 

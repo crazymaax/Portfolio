@@ -9,7 +9,7 @@ export const ModalDiv = styled.div`
     justify-content: center;
 
     figure {
-        height: 100%;
+        height: 60%;
         
         img {
             object-fit: cover;
@@ -41,8 +41,9 @@ export const ProjectInfo = styled.div`
 
     p {
         margin-bottom: 20px;
+        font-size: 14px;
     }
-
+    
     a {
         width: max-content;
         display: inline-block;
@@ -51,7 +52,7 @@ export const ProjectInfo = styled.div`
         border: 1px solid ${(props) => props.theme.secondary};
         background-color: ${(props) => props.theme.secondary};
         color: white;
-        font-size: 14px;
+        font-size: 12px;
         &:hover {
             background-color: ${(props) => props.theme.quinternary};
             border-color: transparent;
@@ -64,6 +65,10 @@ export const ProjectInfo = styled.div`
     }
 
     @media screen and (min-width: 768px) {
+        p {
+            font-size: 16px;
+        }
+
         a {
             font-size: 16px;
         }
