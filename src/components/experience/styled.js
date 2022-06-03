@@ -28,7 +28,6 @@ export const Figure = styled.figure`
 
     img {
         max-width: 50%;
-        /* height: auto; */
         margin: 0 auto;
     }
 

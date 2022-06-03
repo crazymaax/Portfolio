@@ -1,10 +1,10 @@
-import {HeaderStyled, HeaderContainer, Buttons, Socials, Image, ScrollDown} from "./styled.js"
+import { HeaderStyled, HeaderContainer, Buttons, Socials, Image } from "./styled.js"
 
-import resume from "../../assets/Currículo de Max Milan Campos de Oliveira.pdf"
-import photo from "../../assets/images/photo/Max.jpg"
+import Resume from "../../assets/Currículo de Max Milan Campos de Oliveira.pdf"
+import Photo from "../../assets/images/photo/Max.jpg"
 
-import {BsLinkedin} from "react-icons/bs"
-import {FaGithub} from "react-icons/fa"
+import { BsLinkedin } from "react-icons/bs"
+import { FaGithub } from "react-icons/fa"
 
 const Header = () => {
 
@@ -15,26 +15,24 @@ const Header = () => {
                 <h1>Max Milan</h1>
                 <h5>Desenvolvedor Front End</h5>
                 <Buttons>
-                    <a href={resume} download>Download Currículo</a>
+                    <a href={Resume} download>Download Currículo</a>
                     <a href="#contact">Vamos Conversar</a>
                 </Buttons>
 
                 <Socials>
                     <a href="https://www.linkedin.com/in/maxmilan/" target="_blank">
-                        <BsLinkedin/>
+                        <BsLinkedin />
                     </a>
                     <a href="https://github.com/crazymaax" target="_blank">
-                        <FaGithub/>
+                        <FaGithub />
                     </a>
                 </Socials>
 
                 <Image>
-                    <img src={photo} alt="Max Milan" />
+                    <img src={Photo} alt="Max Milan" />
                     <figcaption>Max Milan</figcaption>
                 </Image>
 
-                {/* <ScrollDown href="#contact">Arraste até o fim</ScrollDown> */}
-            
             </HeaderContainer>
         </HeaderStyled>
     )

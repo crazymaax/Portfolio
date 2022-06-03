@@ -1,18 +1,17 @@
-import Rodal from 'rodal';
-
 import { ModalDiv, ProjectInfo } from "./styled"
-import 'rodal/lib/rodal.css';
+
+import { BiLinkExternal } from "react-icons/bi"
 
 import { useProject } from '../../../providers/projects/projects';
 
-import { BiLinkExternal } from "react-icons/bi"
+import Rodal from 'rodal';
+import 'rodal/lib/rodal.css';
 
 const Modal = () => {
 
     const { hide, visible, currentProject, windowWidth } = useProject()
-    console.log(currentProject)
 
-    const { name, image, language, description, github, live } = currentProject
+    const { name, image, description, github, live } = currentProject
 
     return (
         <Rodal visible={visible} width={windowWidth()} height="550" onClose={() => hide()}>
@@ -26,8 +25,12 @@ const Modal = () => {
                     <p>{description}</p>
 
                     <div>
-                        <a href={github} target="_blank">Github <BiLinkExternal size="10"/></a>
-                        <a href={live} target="_blank">Vá ao site <BiLinkExternal size="10"/></a>
+                        <a href={github} target="_blank">
+                            Github <BiLinkExternal size="10" />
+                        </a>
+                        <a href={live} target="_blank">
+                            Vá ao site <BiLinkExternal size="10" />
+                        </a>
                     </div>
                 </ProjectInfo>
             </ModalDiv>

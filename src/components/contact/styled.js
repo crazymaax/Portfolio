@@ -2,15 +2,12 @@ import styled from "styled-components"
 
 export const ContactContainer = styled.div`
     display: flex;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
-    /* align-items: center; */
-    
+   
     @media screen and (min-width: 768px) {
         justify-content: space-between;
-
     }
-    `
+`
 
 export const ContactsBox = styled.div`
     display: flex;
@@ -24,7 +21,7 @@ export const ContactsBox = styled.div`
         margin-bottom: 0;
         width: inherit;
     }
-    `
+`
 
 export const ContactOption = styled.div`
     background-color: ${(props) => props.theme.secondary};
@@ -54,10 +51,9 @@ export const ContactOption = styled.div`
         color: ${(props) => props.theme.terciary};
         &:hover {
             color: ${(props) => props.theme.quinternary};
-
         }
     }
-    `
+`
 
 export const FormStyled = styled.form`
     display:flex;
@@ -66,7 +62,6 @@ export const FormStyled = styled.form`
     width: 100%;
     
     input, textarea {
-        /* width: 100%; */
         padding: 1.5rem;
         border-radius: 0.5rem;
         background: transparent;

@@ -1,27 +1,27 @@
-import { ContactContainer, ContactOption, ContactsBox, ContactSection, FormStyled } from "./styled"
+import { ContactContainer, ContactOption, ContactsBox, FormStyled } from "./styled"
+
+import { useRef } from 'react';
 
 import { MdOutlineEmail } from "react-icons/md"
 import { BsWhatsapp } from "react-icons/bs"
 
-import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-
     const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-    emailjs.sendForm("service_iyezwbx", "template_bh3m111", form.current, "0UVudnl16MP0X2jib")
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+        emailjs.sendForm("service_iyezwbx", "template_bh3m111", form.current, "0UVudnl16MP0X2jib")
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
 
-      e.target.reset();
-  };
+        e.target.reset();
+    };
 
     return (
         <section id="contact">

@@ -6,7 +6,6 @@ export const PortfoliosDiv = styled.div`
     justify-content: center;
     background-color: ${(props) => props.theme.secondary};
     border-radius: 8px;
-    
 `
 
 export const ProjectContainer = styled.div`
@@ -76,6 +75,7 @@ export const Description = styled.div`
 
     div {
         margin-top: 10px;
+
         h3 {
             font-weight: 700;
         }
@@ -98,7 +98,6 @@ export const Description = styled.div`
     } 
 
     @media screen and (min-width: 768px) {
-
         div {
             margin-top: 50px;
 

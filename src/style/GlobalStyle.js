@@ -6,29 +6,6 @@ export const GlobalStyle = createGlobalStyle`
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
-:root {
-/* 	--bg-color: #1F1F38;
-	--bg-color-2: #266DD3;
-	--color-primary: #FFFFFF;
-	--color-primary-2: #7B7263;
-	--color-secondary: #798478; */
-	/* --color-terciary: rgba(255, 255, 255, 0.6); */
-	
-	/* --bg-color: #1f1f38;
-	--bg-color-2: #2c2c6c;
-	--color-primary: #4db5ff;
-	--color-primary-2: rgba(77, 181, 255, 0.4);
-	--color-secondary: #fff;
-	--color-terciary: rgba(255, 255, 255, 0.6); */
-	/* LG 75% MD 86% SM 90% */
-	/* .CONTAINER{
-		WIDTH VAR(LG,MD,SM);
-		MARGIN 0 AUTO;
-	} */
-}
-
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

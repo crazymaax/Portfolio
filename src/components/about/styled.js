@@ -1,11 +1,7 @@
 import styled from "styled-components"
 
 export const AboutContainer = styled.div`
-    /* display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 35%; */
     display: flex;
-    /* justify-content: space-between; */
     flex-direction: column;
 
     a {
@@ -42,15 +38,8 @@ export const HighlightInfos = styled.div`
 `
 
 export const ImageContainer = styled.div`
-    /* width: 100%; */
-    /* width: 80%; */
-    /* height: 95%; */
-    /* margin-right: 50px; */
-    /* aspect-ratio: 1/1; */
     border-radius: 3rem;
     background: linear-gradient(45deg, transparent, ${(props) => props.theme.quinternary}, transparent);
-    /* display: grid; */
-    /* place-items: center; */
     margin-bottom: 20px;
     
     figure {
@@ -64,7 +53,6 @@ export const ImageContainer = styled.div`
         
         img {
             border-radius: 3rem;
-            /* width: 100%; */
             height: 188px;
         }
 
@@ -79,8 +67,6 @@ export const ImageContainer = styled.div`
 `
 
 export const CardsContainer = styled.div`
-    /* display: grid; */
-    /* grid-template-columns: repeat(3, 1fr); */
     gap: 1.5rem;
     display: flex;
     justify-content: center;
@@ -92,7 +78,6 @@ export const Cards = styled.div`
     border: 1px solid transparent;
     border-radius: 1rem;
     padding: 1.7rem;
-    /* height: 100px; */
     width: 100px;
     text-align: center;
     transition: all 400ms ease;
@@ -117,17 +102,11 @@ export const Cards = styled.div`
 `
 
 export const TextContainer = styled.div`
-
     p {
-        /* margin: 2rem 0 2.6rem; */
         margin: 5px;
-        /* color: var(--color-secondary); */
     }
     
     p:last-child {
-        /* margin: 2rem 0 2.6rem; */
         margin-bottom: 30px;
     }
-
-
 `

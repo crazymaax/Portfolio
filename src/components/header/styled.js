@@ -13,12 +13,11 @@ export const HeaderContainer = styled.div`
     height: 100%;
     position: relative;
 
-    h1{
+    h1 {
         color: ${(props) => props.theme.quinternary};
         font-weight: 600;
 	    font-size: 2.5rem;
     }
-
 `
 
 export const Buttons = styled.div`
@@ -34,7 +33,6 @@ export const Buttons = styled.div`
         border-radius: 0.4rem;
         color: ${(props) => props.theme.terciary};
         border: 1px solid ${(props) => props.theme.secondary};
-
         &:hover {
             background-color: ${(props) => props.theme.quinternary};
             border-color: transparent;
@@ -49,7 +47,6 @@ export const Buttons = styled.div`
             background-color: ${(props) => props.theme.quinternary};
         }
     }
-
 `
 
 export const Socials = styled.div`
@@ -73,14 +70,9 @@ export const Socials = styled.div`
 `
 
 export const Image = styled.figure`
-    /* background-color: linear-gradient(var(--color-primary)); */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    /* margin-top: 4rem; */
-    /* border-radius: 5rem 5rem 0 0; */
-    /* overflow: hidden; */
-    /* padding: 2rem 0rem 1.5rem 0rem; */
     padding-top: 40px;
 
     img {
@@ -91,8 +83,6 @@ export const Image = styled.figure`
         &:hover {
             box-shadow: 0px 20px 20px 4px rgb(255 255 255 / 20%);
         }
-        /* border-radius: 12rem 12rem 0 0; */
-        /* object-fit: cover; */
     }
     
     figcaption {
@@ -101,28 +91,6 @@ export const Image = styled.figure`
     
     @media screen and (min-width: 768px) {
         width: 22rem;
-        height: 30rem;
-        /* border-radius: 12rem 12rem 0 0; */
-        /* padding: 5rem 1rem 1.5rem 1rem; */
-
-        img {
-            /* border-radius: 0; */
-
-        }
-        
-    }
-`
-
-export const ScrollDown = styled.a`
-    display: none;
-    
-    @media screen and (min-width: 768px) {
-        display: inline-block;
-        position: absolute;
-        right: -2.3rem;
-        bottom: 5rem;
-        transform: rotate(90deg);
-        font-weight: 300;
-        font-size: 0.9rem;
+        height: 30rem;        
     }
 `

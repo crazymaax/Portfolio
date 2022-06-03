@@ -1,19 +1,19 @@
-import { PortfolioSection, PortfoliosDiv, ProjectContainer, Description } from "./styled"
+import { PortfoliosDiv, ProjectContainer, Description } from "./styled"
 
 import projects from "./projects"
-
 import Modal from "./Modal/Modal"
+
 import { useProject } from "../../providers/projects/projects"
 
 const Portfolio = () => {
 
-    const {show} = useProject()
+    const { show } = useProject()
 
     return (
         <section id="portfolio">
             <h5>Conheça meus</h5>
             <h2>Projetos</h2>
-            <Modal/>
+            <Modal />
             <PortfoliosDiv>
                 {projects.map((project, index) => {
                     return (
@@ -29,11 +29,9 @@ const Portfolio = () => {
                                 </div>
 
                                 <button onClick={() => show(project)}>Informações</button>
-                                
+
                             </Description>
-
                         </ProjectContainer>
-
                     )
                 })}
             </PortfoliosDiv>

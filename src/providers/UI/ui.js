@@ -7,11 +7,11 @@ export const UIProvider = ({ children }) => {
     const [currentTheme, setCurrentTheme] = useState("light");
 
     const getOpositeTheme = useCallback(() => (currentTheme === "light" ? "dark" : "light"),
-    [currentTheme]
-  );
+        [currentTheme]
+    );
 
     return (
-        <UIContext.Provider value={{ currentTheme, setCurrentTheme, getOpositeTheme}}>
+        <UIContext.Provider value={{ currentTheme, setCurrentTheme, getOpositeTheme }}>
             {children}
         </UIContext.Provider>
     );

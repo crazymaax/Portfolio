@@ -9,17 +9,12 @@ export const ModalDiv = styled.div`
     justify-content: center;
 
     figure {
-        /* width: 100%; */
-        /* height: 50%; */
         height: 100%;
-        /* overflow: hidden; */
         
         img {
             object-fit: cover;
             width: 100%;
             height: 100%;
-            /* min-width: 100%; */
-            /* min-height: 100%; */
         }
         
         figcaption {
@@ -27,12 +22,11 @@ export const ModalDiv = styled.div`
         }
     }
 
-@media screen and (min-width: 768px) {
-
-    figure {
-        height: 320px
+    @media screen and (min-width: 768px) {
+        figure {
+            height: 320px
+        }
     }
-}
 `
 
 export const ProjectInfo = styled.div`
@@ -58,7 +52,6 @@ export const ProjectInfo = styled.div`
         background-color: ${(props) => props.theme.secondary};
         color: white;
         font-size: 14px;
-
         &:hover {
             background-color: ${(props) => props.theme.quinternary};
             border-color: transparent;
@@ -70,9 +63,9 @@ export const ProjectInfo = styled.div`
         margin-left: 15px;
     }
 
-@media screen and (min-width: 768px) {
-    a {
-        font-size: 16px;
+    @media screen and (min-width: 768px) {
+        a {
+            font-size: 16px;
+        }
     }
-}
 `

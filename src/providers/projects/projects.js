@@ -19,9 +19,9 @@ export const ProjectProvider = ({ children }) => {
     const windowWidth = () => {
         let windowWidth = window.innerWidth
 
-        if(windowWidth > 768){
+        if (windowWidth > 768) {
             return windowWidth - 400;
-        }else {
+        } else {
             return windowWidth - 100;
         }
     }

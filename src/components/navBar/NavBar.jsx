@@ -1,21 +1,19 @@
 import { ChangeMode, NavStyled } from "./styled"
 
+import { useState } from "react"
+
 import { AiOutlineHome, AiOutlineUser, AiOutlineMessage } from "react-icons/ai"
 import { BiStar } from "react-icons/bi"
 import { BsMoonFill } from "react-icons/bs"
 import { MdWorkOutline } from "react-icons/md"
 import { IoMdSunny } from "react-icons/io"
 
-import { useState } from "react"
 import { useUI } from "../../providers/UI/ui"
-
 
 const NavBar = () => {
 
     const { setCurrentTheme, getOpositeTheme } = useUI();
-
     const [active, setActive] = useState("#")
-
 
     return (
         <>

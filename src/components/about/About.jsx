@@ -1,9 +1,8 @@
-import { AboutSection, AboutContainer, HighlightInfos, ImageContainer, CardsContainer, Cards, TextContainer } from "./styled"
+import { AboutContainer, HighlightInfos, ImageContainer, CardsContainer, Cards, TextContainer } from "./styled"
 
 import photo from "../../assets/images/photo/MaxAbout.png"
 
 import { FaAward } from "react-icons/fa"
-import { FiUsers } from "react-icons/fi"
 import { VscFolderLibrary } from "react-icons/vsc"
 
 const About = () => {
@@ -29,11 +28,6 @@ const About = () => {
                                 <h5>Experiência</h5>
                                 <small>1+ Anos</small>
                             </Cards>
-{/*                             {<Cards>
-                                <FiUsers className="icon" />
-                                <h5>Clientes</h5>
-                                <small>100+ </small>
-                            </Cards>} */}
                             <Cards>
                                 <VscFolderLibrary className="icon" />
                                 <h5>Projetos</h5>
