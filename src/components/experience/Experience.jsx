@@ -1,10 +1,8 @@
-import { ExperienceSection, Figure, SkillsDiv } from "./styled"
+import { Figure, SkillsDiv } from "./styled"
+
 import skills from "./skills"
-import { useState } from "react"
 
 const Experience = () => {
-
-    const [hover, setHover] = useState(false)
 
     return (
         <section id="experience">
@@ -12,14 +10,14 @@ const Experience = () => {
             <h2>Experiência</h2>
 
             <SkillsDiv>
-            {skills.map((skill,index) => {
-                return (
-                <Figure key={index} onMouseOver={() => setHover(true)} hover={hover}>
-                    <img src={skill.image} alt={skill.name} />
-                    <figcaption>{skill.name}</figcaption>
-                </Figure>
-                )
-            })}  
+                {skills.map((skill, index) => {
+                    return (
+                        <Figure key={index}>
+                            <img src={skill.image} alt={skill.name} />
+                            <figcaption>{skill.name}</figcaption>
+                        </Figure>
+                    )
+                })}
             </SkillsDiv>
         </section>
     )
