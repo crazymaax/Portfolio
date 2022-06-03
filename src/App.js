@@ -6,7 +6,6 @@ import Portfolio from "./components/portfolio/Portfolio"
 import Contact from "./components/contact/Contact"
 import Footer from "./components/footer/Footer"
 
-
 function App() {
   return (
     <>
