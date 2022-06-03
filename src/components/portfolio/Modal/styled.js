@@ -36,14 +36,14 @@ export const ModalDiv = styled.div`
 `
 
 export const ProjectInfo = styled.div`
-margin-top: 10px;
-border-top: 2px solid ${(props) => props.theme.quinternary};
+    margin-top: 10px;
+    border-top: 2px solid ${(props) => props.theme.quinternary};
 
-h5 {
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin: 10px;
-}
+    h5 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin: 10px;
+    }
 
     p {
         margin-bottom: 20px;
@@ -57,6 +57,7 @@ h5 {
         border: 1px solid ${(props) => props.theme.secondary};
         background-color: ${(props) => props.theme.secondary};
         color: white;
+        font-size: 14px;
 
         &:hover {
             background-color: ${(props) => props.theme.quinternary};
@@ -68,4 +69,10 @@ h5 {
     a:last-child {
         margin-left: 15px;
     }
+
+@media screen and (min-width: 768px) {
+    a {
+        font-size: 16px;
+    }
+}
 `
