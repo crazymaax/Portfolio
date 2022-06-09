@@ -9,8 +9,17 @@ import HamburgueriaKenzie from "../../assets/images/portfolio/HamburgueriaKenzie
 import GitHubCards from "../../assets/images/portfolio/GitHubCards.jpg"
 import Doit from "../../assets/images/portfolio/Doit.jpg"
 import SmartMenu from "../../assets/images/portfolio/SmartMenu.jpg"
+import EsseOuAquele from "../../assets/images/portfolio/EsseOuAquele.jpg"
 
 const projects = [
+    {
+        name: "Esse ou Aquele?",
+        github: "https://github.com/crazymaax/Esse-ou-Aquele",
+        image: EsseOuAquele,
+        language: "React - Axios - SASS - React Icons - HTML - JavaScript",
+        description: "Jogo simples onde são mostrados fotos de gatinhos aleatoriamente, onde temos a terrivel tarefa de escolher qual o mais fofo!",
+        live: "https://esse-ou-aquele.vercel.app/"
+    },
     {
         name: "Smart Menu",
         github: "https://github.com/crazymaax/SmartMenu",

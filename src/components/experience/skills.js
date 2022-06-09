@@ -9,9 +9,9 @@ import Figma from "../../assets/images/skills/Figma.png"
 import React from "../../assets/images/skills/React.png"
 import Redux from "../../assets/images/skills/Redux.png"
 import StyledComponents from "../../assets/images/skills/Styled-Components.png"
+import SASS from "../../assets/images/skills/SASS.png"
 import TypeScript from "../../assets/images/skills/TypeScript.png"
 import Cypress from "../../assets/images/skills/Cypress.png"
-
 
 const skills = [
     {
@@ -57,6 +57,10 @@ const skills = [
     {
         name: "Styled-Components",
         image: StyledComponents
+    },
+    {
+        name: "SASS",
+        image: SASS
     },
     {
         name: "TypeScript",
